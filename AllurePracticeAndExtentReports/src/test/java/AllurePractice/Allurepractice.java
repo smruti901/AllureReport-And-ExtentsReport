@@ -42,10 +42,10 @@ public class Allurepractice {
 		Allure.step("Application launched successfully");
 		driver.findElement(By.name("q")).sendKeys("flipkart",Keys.ENTER);
 		Allure.step("Product searched successfully");
-		Assert.fail();
+		//Assert.fail();
 		Allure.step("Application wait for 3 sec");
 		driver.quit();
-		//Allure.step("Browser closed successfully");
+		Allure.step("Browser closed successfully");
 	}
 
 }
